@@ -1,28 +1,101 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-    font-family: Comfortaa,sans-serif;
+*{
+  box-sizing: border-box;
+  font-family: Comfortaa, sans-serif;
+  box-sizing: border-box;
 }
-html,body{
-    margin:0;
-    padding:0;
+body{
+  margin:0;
+  padding:0;
 }
 .Page{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(#C33764,#1D2671);
+  position:absolute;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#C33764,#1D2671);
 }
 .Title,.input-button{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+select,button{
+  border:none;
+  cursor: pointer;
+}
+input{
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+button{
+  font-size: 2rem;
+  border: none;
+  background: white;
+  color:pink
+}
+input:focus, button:focus,select:focus{
+  outline:none;
+}
+button:hover{
+  background:#ff6f47;
 }
 .todo-input{
-    margin:1rem;
-    height:3rem;
+  height:3rem;
+  width:20rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 1rem;
+}
+.todo-button{
+  height:3rem;
+  width:3rem;
+}
+.filter-todo{
+  height:3rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list{
+  list-style: none;
+}
+.todo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:1rem;
+}
+.todo-item{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height:auto;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+}
+.complete-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    min-width: 10rem;
-    border-radius: 15px;
+}
+.trash-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
 }

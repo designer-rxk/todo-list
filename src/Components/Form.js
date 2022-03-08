@@ -16,17 +16,17 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
   }
   return (
     <div>
-      <form>
+      <form className={"Form"}>
           <div className={"input-button"}>
-            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
+            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" placeholder={"Input a new task!"}/>
             <button onClick={submitTodoHandler} className="todo-button" type="submit">
                 <i className="fas fa-plus-square"></i>
             </button>
               <div className="select">
               <select onChange={filterHandler} name="todos" className="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Not completed</option>
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Not completed</option>
               </select>
           </div>
         </div>
