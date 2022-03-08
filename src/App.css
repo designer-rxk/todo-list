@@ -1,7 +1,11 @@
 *{
   box-sizing: border-box;
   font-family: Comfortaa, sans-serif;
-  box-sizing: border-box;
+}
+.plus-square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body{
   margin:0;
@@ -33,7 +37,8 @@ button{
   font-size: 2rem;
   border: none;
   background: white;
-  color:pink
+  color:pink;
+  height:3rem;
 }
 input:focus, button:focus,select:focus{
   outline:none;
@@ -71,9 +76,10 @@ button:hover{
   align-items: center;
   margin:1rem;
 }
+
 .todo-item{
-  padding-left: 1rem;
-  padding-right: 1rem;
+  min-height: 3rem;
+  padding: 0.5rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   height:auto;
@@ -82,20 +88,20 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 3rem;
+}
+.todo-container{
+  overflow: auto;
 }
 .complete-btn{
+  padding:1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.trash-btn{
+.trash-btn{  padding:1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height:auto;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-
 }
