@@ -2,14 +2,23 @@
   box-sizing: border-box;
   font-family: Comfortaa, sans-serif;
 }
-.plus-square{
-  display: flex;
+.Centered{
+  display:flex;
   justify-content: center;
   align-items: center;
+}
+.Form{
+  width:30rem;
+  border-radius: 20px;
+  background-color: white;
 }
 body{
   margin:0;
   padding:0;
+}
+h1{
+  font-size: 4rem;
+  color:black;
 }
 .Page{
   position:absolute;
@@ -17,12 +26,21 @@ body{
   height:100%;
   top: 0;
   left: 0;
-  background: linear-gradient(#C33764,#1D2671);
+  background: rgba(57, 113, 198, 1.0);
+  background: -webkit-linear-gradient(top left, rgba(57, 113, 198, 1.0), rgba(192, 198, 215, 1.0));
+  background: -moz-linear-gradient(top left, rgba(57, 113, 198, 1.0), rgba(192, 198, 215, 1.0));
+  background: linear-gradient(to bottom right, rgba(57, 113, 198, 1.0), rgba(192, 198, 215, 1.0));
 }
 .Title,.input-button{
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.todo-input{
+  padding:1rem;
+}
+.todo-input::placeholder{
+  color:black;
 }
 select,button{
   border:none;
@@ -34,17 +52,27 @@ input{
   background: white;
 }
 button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
   font-size: 2rem;
   border: none;
   background: white;
-  color:pink;
+  color:rgba(57, 113, 198, .75);
   height:3rem;
+  border: 1px solid white;
+  transition: 0.2s;
 }
 input:focus, button:focus,select:focus{
   outline:none;
 }
 button:hover{
-  background:#ff6f47;
+  background:#A1B5D8;
+  color:white;
+  border: 1px solid #A1B5D8;
+  z-index: 1;
+  transition: 0.2s;
 }
 .todo-input{
   height:3rem;
@@ -74,14 +102,13 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:1rem;
+  margin:1.5rem;
+  text-align:justify;
 }
-
 .todo-item{
   min-height: 3rem;
   padding: 0.5rem;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   height:auto;
   background: white;
   color: black;
@@ -97,11 +124,20 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
-.trash-btn{  padding:1rem;
+.trash-btn{
+  padding:1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
+}
+.right-side{
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

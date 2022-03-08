@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="Page">
       <header>
-        <h1 className={"Title"}> To-do List </h1>
+        <h1 className={"Title"}>To Do List</h1>
       </header>
       <Form
         inputText={inputText}

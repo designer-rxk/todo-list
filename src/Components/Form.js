@@ -15,7 +15,7 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
     setStatus(e.target.value)
   }
   return (
-    <div>
+    <div className={"Centered"}>
       <form className={"Form"}>
           <div className={"input-button"}>
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" placeholder={"Input a new task!"}/>
@@ -24,9 +24,9 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
             </button>
               <div className="select">
               <select onChange={filterHandler} name="todos" className="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Not completed</option>
+                    <option value="all" className={"option"}>All</option>
+                    <option value="completed" className={"option"}>Completed</option>
+                    <option value="uncompleted" className={"option"}>Not completed</option>
               </select>
           </div>
         </div>
