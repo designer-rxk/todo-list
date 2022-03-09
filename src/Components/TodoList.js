@@ -3,7 +3,6 @@ import Todo from "./Todo";
 
 function TodoList({ todos, setTodos, filterTodos }) {
   return (
-    <div>
       <div className="todo-container">
         <ul className="todo-list">
           {filterTodos.map((todo) => (
@@ -11,7 +10,6 @@ function TodoList({ todos, setTodos, filterTodos }) {
           ))}
         </ul>
       </div>
-    </div>
   );
 }
 
