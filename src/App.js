@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <div className="Page">
+    <div className={"Page"}>
       <header>
         <h1 className={"Title"}>To Do List</h1>
       </header>
