@@ -96,6 +96,13 @@ button:hover{
   color:white;
   background:#A1B5D8;
 }
+.filter-done{
+  border-radius: 20px 20px 0px 0px;
+  background: mediumpurple;
+  font-size: 1rem;
+  height:3rem;
+  text-align: center;
+}
 .todo-container{
   display:flex;
   text-align: center;

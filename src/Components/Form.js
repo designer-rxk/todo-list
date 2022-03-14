@@ -1,6 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Form({inputText, setInputText, todos, setTodos, setStatus}) {
+  const [isActive, setActive] = useState(false);
+
+    const toggleClass = () => {
+    setActive(!isActive);
+  };
+
+
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -23,7 +30,7 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
                 <i className="fas fa-plus-square"></i>
             </button>
             <div className="select">
-              <select onChange={filterHandler} name="todos" className="filter-todo">
+              <select onChange={filterHandler} name="todos" className={isActive ? "filter-done" : "filter-todo"} onClick={toggleClass}>
                 <option value="all" className={"option"}>All</option>
                 <option value="completed" className={"option"}>Completed</option>
                 <option value="uncompleted" className={"option"}>Not completed</option>
