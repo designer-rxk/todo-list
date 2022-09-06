@@ -7,7 +7,6 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
     setActive(!isActive);
   };
 
-
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
